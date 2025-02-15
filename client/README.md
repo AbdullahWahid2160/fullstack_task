@@ -1,27 +1,10 @@
-# fullstack_task
-An application with sidebar and a couple of routes.
-
-## SERVER SIDE
-
-## Available Scripts
-In the project directory(/server), you can run:
-
-### `yarn start`
-
-Runs the server in the development mode.
-[http://localhost:6000]
-
-The server will reload if you make edits.
-
-## CLIENT SIDE
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory(/client), you can run:
+In the project directory, you can run:
 
 ### `npm start`
 
