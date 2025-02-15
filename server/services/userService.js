@@ -1,5 +1,5 @@
 // Sample data
-const users = require("../utils/constants");
+const { users } = require("../utils/constants");
 
 const getAllUsers = () => {
   return users;

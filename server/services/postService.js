@@ -1,4 +1,4 @@
-const posts = require("../utils/constants");
+const { posts } = require("../utils/constants");
 
 const getPostsByUser = (userId) => {
   return posts.filter((post) => post.userId === userId);
