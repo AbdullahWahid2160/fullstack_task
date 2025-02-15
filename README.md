@@ -1,7 +1,7 @@
 # fullstack_task
 An application with sidebar and a couple of routes.
 
-## SERVER SIDE
+# SERVER SIDE
 
 ## Available Scripts
 In the project directory(/server), you can run:
@@ -13,7 +13,7 @@ Runs the server in the development mode.
 
 The server will reload if you make edits.
 
-## CLIENT SIDE
+# CLIENT SIDE
 
 # Getting Started with Create React App
 
