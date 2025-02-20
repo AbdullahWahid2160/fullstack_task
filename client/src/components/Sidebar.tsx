@@ -72,7 +72,7 @@ const Sidebar = () => {
         <div className="avatar-container">
           <Avatar
             size={80}
-            src="/DP.jfif" // Replace with user image URL
+            src="/DP.jpg" // Replace with user image URL
             icon={<UserOutlined />}
             className="user-avatar"
           />
