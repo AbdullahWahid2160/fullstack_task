@@ -4,6 +4,7 @@ import { Layout } from "antd";
 import Sidebar from "./components/Sidebar";
 import Dashboard from "./pages/Dashboard";
 import Blogs from "./pages/Blogs";
+import PostDetails from "./components/PostDetails";
 
 const { Content } = Layout;
 
@@ -17,6 +18,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/blogs" element={<Blogs />} />
+              <Route path="/posts/:postId" element={<PostDetails />} />
             </Routes>
           </Content>
         </Layout>
