@@ -4,7 +4,8 @@
   "main": "app.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "build": "echo 'No build step needed for Node.js'"
   },
   "dependencies": {
     "cors": "^2.8.5",
