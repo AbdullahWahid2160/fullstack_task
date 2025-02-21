@@ -17,6 +17,11 @@ The server will reload if you make edits.
 
 # Getting Started with Create React App
 
+## Production URL
+
+https://fullstack-task-gold.vercel.app/
+https://fullstack-task-gold.vercel.app/blogs
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
