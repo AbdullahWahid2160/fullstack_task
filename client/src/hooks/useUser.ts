@@ -11,7 +11,7 @@ const useUser = () => {
       try {
         const randomUserId = Math.floor(Math.random() * 10) + 1; // Random user ID between 1 and 10
         const response = await axios.get(
-          `/proxy/api-users/users/${randomUserId}`
+          `${process.env.REACT_APP_API_BASE_URL}/api-users/users/${randomUserId}`
         );
         setUser(response.data);
       } catch (err: any) {

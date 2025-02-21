@@ -17,7 +17,7 @@ const Blogs = () => {
   useEffect(() => {
     const userId = Math.floor(Math.random() * 10) + 1;
     axios
-      .get(`/proxy/api-posts/users/${userId}/posts`)
+      .get(`${process.env.REACT_APP_API_BASE_URL}/api-posts/users/${userId}/posts`)
       .then((response) => setPosts(response.data))
       .catch((error) => console.error(error));
   }, []);
