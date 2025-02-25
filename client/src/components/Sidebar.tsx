@@ -18,12 +18,14 @@ import {
 } from "@ant-design/icons";
 import "./Sidebar.css"; // Custom CSS for additional styling
 import useUser from "../hooks/useUser";
+import { useNavigate } from "react-router-dom";
 
 const { Sider } = Layout;
 const { Text } = Typography;
 
 const Sidebar = () => {
   const { user, loading, error } = useUser(); // Fetch user data
+  const navigate = useNavigate();
 
   if (loading) {
     return (
@@ -47,13 +49,14 @@ const Sidebar = () => {
       </Sider>
     );
   }
+
   return (
     <Sider theme="light" width={250} className="sidebar">
       {/* Logo and Action Icon */}
       <Row align="middle" justify="space-between" className="sidebar-header">
         <Col>
           <img
-            src="/Logo.jpg" // Replace with your logo URL
+            src="/QDB-logo.png" // Replace with your logo URL
             alt="Logo"
             className="sidebar-logo"
           />
@@ -97,7 +100,11 @@ const Sidebar = () => {
           icon={<DashboardTwoTone />}
           title="Dashboard"
         >
-          <Menu.Item key="overview" icon={<BarChartOutlined />} disabled>
+          <Menu.Item
+            key="overview"
+            icon={<BarChartOutlined />}
+            onClick={() => navigate("/")}
+          >
             Overview
           </Menu.Item>
           <Menu.Item key="calendar" icon={<CalendarOutlined />} disabled>
@@ -113,7 +120,11 @@ const Sidebar = () => {
 
         {/* Blogs Submenu */}
         <Menu.SubMenu key="blogs" icon={<BookTwoTone />} title="Blogs">
-          <Menu.Item key="all" icon={<WechatWorkOutlined />} disabled>
+          <Menu.Item
+            key="all"
+            icon={<WechatWorkOutlined />}
+            onClick={() => navigate("/blogs")}
+          >
             All
           </Menu.Item>
           <Menu.Item key="latest" icon={<InfoCircleOutlined />} disabled>
